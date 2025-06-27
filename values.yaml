@@ -57,4 +57,9 @@ resources:
     memory: 256Mi
  
 replicaCount: 1
- 
+ports:
+  metrics: 
+    enabled: true
+    containerPort: 8889
+    servicePort: 8889
+    protocol: TCP
